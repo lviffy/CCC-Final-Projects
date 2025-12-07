@@ -45,7 +45,7 @@ To explore a specific project, navigate to its directory and follow the detailed
 
 ```bash
 # Clone the repository (if applicable)
-git clone <repository-url>
+git clone https://github.com/lviffy/CCC-Final-Projects
 
 # Navigate to the Smart Parking System
 cd "Smart Parking System Simulation"
