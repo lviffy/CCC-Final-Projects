@@ -120,60 +120,82 @@ Run the executable to start the simulation:
 | `6`    | **Evacuate**     | Triggers emergency LIFO evacuation.                   |
 | `7`    | **Quit**         | Exits the application.                                |
 
-## 📸 Screenshots
+## Screenshots
 
 ### Core Features
 
 **1. Queue & Parking**
+
 _Shows the Entry Queue, Occupied Slots on Level 1, and the Parking Stack._
+
 ![Queue & Parking](images/Queue-Parking.png)
 
 **2. Exit Queue & Busy Stack**
+
 _A busy system with a full stack and a car waiting in the Exit Queue._
+
 ![Exit Queue & Busy Stack](images/Exit%20Queue%20&%20Busy%20Stack.png)
 
 **3. Payment & Departure**
+
 _Action Log showing a successful payment and exit transaction._
+
 ![Payment & Departure](images/Payment%20&%20Departure.png)
 
 ### Floor Navigation
 
 **4. Occupied Floor (Level 1)**
+
 _Level 1 partially filled with cars._
+
 ![Occupied Floor](images/Occupied%20Floor.png)
 
 **5. Empty Floor (Level 4)**
+
 _Level 4 completely empty, demonstrating the circular list navigation._
+
 ![Empty Floor](images/Empty%20Floor.png)
 
 ### Advanced Scenarios
 
 **6. Full Row & Busy Queue**
+
 _Stress test: A fully occupied row and a long line of cars._
+
 ![Full Row & Busy Queue](images/Full%20Row%20&%20Busy%20Queue.png)
 
 **7. Level 1 Full (Overflow)**
+
 _Level 1 reaches 100% capacity (0 slots available)._
+
 ![Level 1 Full](images/Level%201%20Full.png)
 
 **8. Spillover to Level 2**
+
 _Smart logic: Car #1 is automatically assigned to Level 2 because Level 1 is full._
+
 ![Spillover to Level 2](images/SpillOver%20to%20Level%202.png)
 
 ### Smart Slot Reuse
 
 **9. Creating Gaps**
+
 _Cars leave from the middle of the row, creating specific empty slots._
+
 ![Creating Gaps](images/Creating%20Gaps.png)
 
 **10. Filling the Gap**
+
 _New car intelligently fills the first available slot (Slot 1) instead of the end._
+
 ![Filling the Gap](images/Filling%20he%20Gaps.png)
 
 ### Emergency
 
 **11. Emergency Evacuation**
+
 _System triggers LIFO evacuation, clearing the stack._
+
 ![Emergency Evacuation](images/Emergency%20Evacuation.png)
 
 ## License
