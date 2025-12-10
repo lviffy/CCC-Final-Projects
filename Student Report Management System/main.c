@@ -263,11 +263,40 @@ void staffMenu() {
 }
 
 /*
- * Guest Menu: Restricted access.
+ * Guest Menu: Restricted access (read-only).
  */
 void guestMenu() {
-  printf("\n-----GUEST MENU-----\n");
-  printf("Access Restricted. Please contact admin.\n");
+  int choice;
+  do {
+    printf("\n-----GUEST MENU-----\n");
+    printf("1. Display Students\n");
+    printf("2. Search Students\n");
+    printf("3. Logout\n");
+    printf("Enter your choice: ");
+
+    // Robust input handling
+    if (scanf("%d", &choice) != 1) {
+      int c;
+      while ((c = getchar()) != '\n' && c != EOF)
+        ;
+      printf("Invalid input. Please enter a number.\n");
+      continue;
+    }
+
+    switch (choice) {
+    case 1:
+      viewStudents();
+      break;
+    case 2:
+      searchStudents();
+      break;
+    case 3:
+      printf("Logging out...\n");
+      break;
+    default:
+      printf("Invalid choice. Try again.\n");
+    }
+  } while (choice != 3);
 }
 
 /*-----------------STUDENT OPERATIONS-----------------*/
